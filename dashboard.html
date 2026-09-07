@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | InstaBuy Insights</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <h2>InstaBuy Insights</h2>
+
+        <div>
+            <a href="index.html">Home</a>
+            <a href="survey.html">Survey</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="findings.html">Findings</a>
+            <a href="conclusion.html">Conclusion</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Header -->
+
+    <section class="dashboard-header">
+
+        <span class="dashboard-tag">
+            📊 Complete Survey Analysis
+        </span>
+
+        <h1>Survey Results Dashboard</h1>
+
+        <p>
+            Impact of Instagram Marketing on Student Buying Behaviour
+        </p>
+
+        <div class="respondent-badge">
+            👥 152 Respondents
+        </div>
+
+    </section>
+
+
+    <!-- Summary Cards -->
+
+    <div class="dashboard">
+
+        <div class="card">
+            <h3>👥 Total Respondents</h3>
+            <p>152</p>
+        </div>
+
+        <div class="card">
+            <h3>👩 Female</h3>
+            <p>84</p>
+        </div>
+
+        <div class="card">
+            <h3>👨 Male</h3>
+            <p>68</p>
+        </div>
+
+        <div class="card">
+            <h3>🔍 Product Discovery</h3>
+            <p>82</p>
+        </div>
+
+    </div>
+
+
+    <!-- All Survey Charts -->
+
+    <section class="all-charts">
+
+        <h2 class="section-title">
+            📈 Survey Questions & Results
+        </h2>
+
+
+        <!-- 1 Age -->
+
+        <div class="chart-box large-chart">
+
+            <h2>1. Age Distribution</h2>
+
+            <canvas id="ageChart"></canvas>
+
+        </div>
+
+
+        <!-- 2 Gender -->
+
+        <div class="chart-box large-chart">
+
+            <h2>2. Gender Distribution</h2>
+
+            <canvas id="genderChart"></canvas>
+
+        </div>
+
+
+        <!-- 3 Course -->
+
+        <div class="chart-box large-chart">
+
+            <h2>3. Course Distribution</h2>
+
+            <canvas id="courseChart"></canvas>
+
+        </div>
+
+
+        <!-- 4 Instagram Usage -->
+
+        <div class="chart-box large-chart">
+
+            <h2>4. Daily Instagram Usage</h2>
+
+            <canvas id="usageChart"></canvas>
+
+        </div>
+
+
+        <!-- 5 Main Purpose -->
+
+        <div class="chart-box large-chart">
+
+            <h2>5. Main Purpose of Instagram</h2>
+
+            <canvas id="purposeChart"></canvas>
+
+        </div>
+
+
+        <!-- 6 Advertisement Frequency -->
+
+        <div class="chart-box large-chart">
+
+            <h2>6. Product Advertisement Frequency</h2>
+
+            <canvas id="adFrequencyChart"></canvas>
+
+        </div>
+
+
+        <!-- 7 Product Discovery -->
+
+        <div class="chart-box large-chart">
+
+            <h2>7. New Product Discovery</h2>
+
+            <canvas id="discoveryChart"></canvas>
+
+        </div>
+
+
+        <!-- 8 Product Categories -->
+
+        <div class="chart-box large-chart">
+
+            <h2>8. Products Commonly Discovered</h2>
+
+            <canvas id="productChart"></canvas>
+
+        </div>
+
+
+        <!-- 9 Purchase Behaviour -->
+
+        <div class="chart-box large-chart">
+
+            <h2>9. Purchase After Seeing Instagram</h2>
+
+            <canvas id="purchaseChart"></canvas>
+
+        </div>
+
+
+        <!-- 10 Advertisement Influence -->
+
+        <div class="chart-box large-chart">
+
+            <h2>10. Advertisement Influence</h2>
+
+            <canvas id="adInfluenceChart"></canvas>
+
+        </div>
+
+
+        <!-- 11 Influencer Influence -->
+
+        <div class="chart-box large-chart">
+
+            <h2>11. Influencer Influence</h2>
+
+            <canvas id="influencerChart"></canvas>
+
+        </div>
+
+
+        <!-- 12 Content Influence -->
+
+        <div class="chart-box large-chart">
+
+            <h2>12. Most Influential Instagram Content</h2>
+
+            <canvas id="contentChart"></canvas>
+
+        </div>
+
+
+        <!-- 13 Discount Influence -->
+
+        <div class="chart-box large-chart">
+
+            <h2>13. Discount Influence</h2>
+
+            <canvas id="discountChart"></canvas>
+
+        </div>
+
+
+        <!-- 14 Reviews -->
+
+        <div class="chart-box large-chart">
+
+            <h2>14. Comments & Reviews Checking</h2>
+
+            <canvas id="reviewChart"></canvas>
+
+        </div>
+
+
+        <!-- 15 Recommendation -->
+
+        <div class="chart-box large-chart">
+
+            <h2>15. Product Recommendation</h2>
+
+            <canvas id="recommendChart"></canvas>
+
+        </div>
+
+    </section>
+
+
+    <!-- Key Insights -->
+
+    <section class="insight-box">
+
+        <h2>✨ Key Survey Insights</h2>
+
+        <div class="insight-item">
+            📱 <strong>64</strong> students use Instagram for 1–2 hours per day.
+        </div>
+
+        <div class="insight-item">
+            🔍 <strong>82</strong> students discovered new products through Instagram.
+        </div>
+
+        <div class="insight-item">
+            🛍️ <strong>66</strong> students purchased a product after seeing it on Instagram.
+        </div>
+
+        <div class="insight-item">
+            🎬 <strong>106</strong> students selected Reels as the most influential content.
+        </div>
+
+        <div class="insight-item">
+            💬 <strong>62</strong> students always check comments or reviews before purchasing.
+        </div>
+
+        <div class="insight-item">
+            🏷️ <strong>54</strong> students said Instagram discounts sometimes influence them.
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            Instagram Marketing Study | 152 Survey Respondents
+        </p>
+
+    </footer>
+
+
+    <!-- CHART JAVASCRIPT -->
+
+    <script>
+
+        /* =========================
+           1. AGE
+        ========================= */
+
+        new Chart(document.getElementById("ageChart"), {
+
+            type: "bar",
+
+            data: {
+
+                labels: [
+                    "Below 18",
+                    "18–20",
+                    "21–23",
+                    "Above 23"
+                ],
+
+                datasets: [{
+                    label: "Respondents",
+
+                    data: [
+                        19,
+                        78,
+                        43,
+                        12
+                    ]
+                }]
+
+            },
+
+            options: {
+                responsive: true,
+
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+
+        });
+
+
+        /* =========================
+           2. GENDER
+        ========================= */
+
+        new Chart(document.getElementById("genderChart"), {
+
+            type: "doughnut",
+
+            data: {
+
+                labels: [
+                    "Female",
+                    "Male"
+                ],
+
+                datasets: [{
+
+                    data: [
+                        84,
+                        68
+                    ]
+
+                }]
+
+            },
+
+            options: {
+                responsive: true,
+
+                plugins: {
+                    legend: {
+                        position: "bottom"
+                    }
+                }
+            }
+
+        });
+
+
+        /* =========================
+           3. COURSE
+        ========================= */
+
+        new Chart(document.getElementById("courseChart"), {
+
+            type: "bar",
+
+            data: {
+
+                labels: [
+                    "BCA",
+                    "B.Sc.",
+                    "B.Com",
+                    "B.A.",
+                    "Other"
+                ],
+
+                datasets: [{
+
+                    label: "Students",
+
+                    data: [
+                        7,
+                        80,
+                        17,
+                        9,
+                        39
+                    ]
+
+                }]
+
+            },
+
+            options: {
+                responsive: true
+            }
+
+        });
+
+
+        /* =========================
+           4. INSTAGRAM USAGE
+        ========================= */
+
+        new Chart(document.getElementById("usageChart"), {
+
+            type: "pie",
+
+            data: {
+
+                labels: [
+                    "Less than 30 minutes/day",
+                    "1–2 hours",
+                    "More than 2 hours"
+                ],
+
+                datasets: [{
+
+                    data: [
+                        54,
+                        64,
+                        34
+                    ]
+
+                }]
+
+            },
+
+            options: {
+                responsive: true,
+
+                plugins: {
+                    legend: {
+                        position: "bottom"
+                    }
+                }
+            }
+
+        });
+
+
+        /* =========================
+           5. MAIN PURPOSE
+        ========================= */
+
+        new Chart(document.getElementById("purposeChart"), {
+
+            type: "bar",
+
+            data: {
+
+                labels: [
+                    "Entertainment",
+                    "Education",
+                    "Following friends",
+                    "News/information",
+                    "Shopping/product discovery"
+                ],
+
+                datasets: [{
+
+                    label: "Students",
+
+                    data: [
+                        83,
+                        22,
+                        21,
+                        19,
+                        7
+                    ]
+
+                }]
+
+            },
+
+            options: {
+                responsive: true,
+
+                indexAxis: "y"
+            }
+
+        });
+
+
+        /* =========================
+           6. ADVERTISEMENT FREQUENCY
+        ========================= */
+
+        new Chart(document.getElementById("adFrequencyChart"), {
+
+            type: "bar",
+
+            data: {
+
+                labels: [
+                    "Very frequently",
+                    "Frequently",
+                    "Sometimes",
+                    "Rarely",
+                    "Never"
+                ],
+
+                datasets: [{
+
+                    label: "Students",
+
+                    data: [
+                        20,
+                        37,
+                        55,
+                        20,
+                        20
+                    ]
+
+                }]
+
+            },
+
+            options: {
+                responsive: true
+            }
+
+        });
+
+
+        /* =========================
+           7. PRODUCT DISCOVERY
+        ========================= */
+
+        new Chart(document.getElementById("discoveryChart"), {
+
+            type: "doughnut",
+
+            data: {
+
+                labels: [
+                    "Yes",
+                    "No"
+                ],
+
+                datasets: [{
+
+                    data: [
+                        82,
+                        70
+                    ]
+
+                }]
+
+            },
+
+            options: {
+                responsive: true,
+
+                plugins: {
+                    legend: {
+                        position: "bottom"
+                    }
+                }
+            }
+
+        });
+
+
+        /* =========================
+           8. PRODUCT CATEGORIES
+        ========================= */
+
+        new Chart(document.getElementById("productChart"), {
+
+            type: "bar",
+
+            data: {
+
+                labels: [
+                    "Clothing",
+                    "Food",
+                    "Other",
+                    "Cosmetics/Beauty",
+                    "Educational",
+                    "Electronics",
+                    "Accessories"
+                ],
+
+                datasets: [{
+
+                    label: "Students",
+
+                    data: [
+                        44,
+                        32,
+                        27,
+                        19,
+                        14,
+                        9,
+                        7
+                    ]
+
+                }]
+
+            },
+
+            options: {
+                responsive: true,
+
+                indexAxis: "y"
+            }
+
+        });
+
+
+        /* =========================
+           9. PURCHASE BEHAVIOUR
+        ========================= */
+
+        new Chart(document.getElementById("purchaseChart"), {
+
+            type: "pie",
+
+            data: {
+
+                labels: [
+                    "Yes",
+                    "No"
+                ],
+
+                datasets: [{
+
+                    data: [
+                        66,
+                        86
+                    ]
+
+                }]
+
+            },
+
+            options: {
+                responsive: true,
+
+                plugins: {
+                    legend: {
+                        position: "bottom"
+                    }
+                }
+            }
+
+        });
+
+
+        /* =========================
+           10. AD INFLUENCE
+        ========================= */
+
+        new Chart(document.getElementById("adInfluenceChart"), {
+
+            type: "bar",
+
+            data: {
+
+                labels: [
+                    "Neutral",
+                    "Does not influence",
+                    "Slightly influence",
+                    "Influence",
+                    "Strongly influence"
+                ],
+
+                datasets: [{
+
+                    label: "Students",
+
+                    data: [
+                        62,
+                        47,
+                        21,
+                        16,
+                        6
+                    ]
+
+                }]
+
+            },
+
+            options: {
+                responsive: true
+            }
+
+        });
+
+
+        /* =========================
+           11. INFLUENCER
+        ========================= */
+
+        new Chart(document.getElementById("influencerChart"), {
+
+            type: "doughnut",
+
+            data: {
+
+                labels: [
+                    "Neutral",
+                    "Disagree",
+                    "Agree",
+                    "Strongly disagree"
+                ],
+
+                datasets: [{
+
+                    data: [
+                        61,
+                        48,
+                        37,
+                        6
+                    ]
+
+                }]
+
+            },
+
+            options: {
+                responsive: true,
+
+                plugins: {
+                    legend: {
+                        position: "bottom"
+                    }
+                }
+            }
+
+        });
+
+
+        /* =========================
+           12. CONTENT
+        ========================= */
+
+        new Chart(document.getElementById("contentChart"), {
+
+            type: "bar",
+
+            data: {
+
+                labels: [
+                    "Reels",
+                    "Stories",
+                    "Sponsored posts",
+                    "Product demonstrations",
+                    "Customer reviews"
+                ],
+
+                datasets: [{
+
+                    label: "Students",
+
+                    data: [
+                        106,
+                        23,
+                        10,
+                        7,
+                        6
+                    ]
+
+                }]
+
+            },
+
+            options: {
+                responsive: true
+            }
+
+        });
+
+
+        /* =========================
+           13. DISCOUNTS
+        ========================= */
+
+        new Chart(document.getElementById("discountChart"), {
+
+            type: "pie",
+
+            data: {
+
+                labels: [
+                    "No",
+                    "Sometimes",
+                    "Yes"
+                ],
+
+                datasets: [{
+
+                    data: [
+                        66,
+                        54,
+                        32
+                    ]
+
+                }]
+
+            },
+
+            options: {
+                responsive: true,
+
+                plugins: {
+                    legend: {
+                        position: "bottom"
+                    }
+                }
+            }
+
+        });
+
+
+        /* =========================
+           14. REVIEWS
+        ========================= */
+
+        new Chart(document.getElementById("reviewChart"), {
+
+            type: "bar",
+
+            data: {
+
+                labels: [
+                    "Always",
+                    "Sometimes",
+                    "Never",
+                    "Often"
+                ],
+
+                datasets: [{
+
+                    label: "Students",
+
+                    data: [
+                        62,
+                        39,
+                        30,
+                        21
+                    ]
+
+                }]
+
+            },
+
+            options: {
+                responsive: true
+            }
+
+        });
+
+
+        /* =========================
+           15. RECOMMENDATION
+        ========================= */
+
+        new Chart(document.getElementById("recommendChart"), {
+
+            type: "doughnut",
+
+            data: {
+
+                labels: [
+                    "Maybe",
+                    "Yes",
+                    "No"
+                ],
+
+                datasets: [{
+
+                    data: [
+                        61,
+                        47,
+                        44
+                    ]
+
+                }]
+
+            },
+
+            options: {
+                responsive: true,
+
+                plugins: {
+                    legend: {
+                        position: "bottom"
+                    }
+                }
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>
